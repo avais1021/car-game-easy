@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.car_game {
+    background: greenyellow;
+    height: 100vh;
+    width: 100%;
+}
+
+.game_area {
+    max-width: 355px;
+    height: 100vh;
+    margin: 0 auto;
+    background-color: black;
+    border-left: 7px dashed white;
+    border-right: 7px dashed white;
+    position: relative;
+    overflow: hidden;
+
+}
+
+/* .lines {
+    width: 10px;
+    height: 100px;
+    background: white;
+    position: absolute;
+    top: 0;
+    left: 50%;
+} */
+
+/* .parent_lines {
+    position: absolute;
+    left: 50%;
+    animation: moveLine 2s linear infinite;
+    top: 0;
+    animation-direction: ;
+
+}
+
+    @keyframes moveLine {
+        0%{
+            top: 0;
+        }
+        100% {
+            top: 120%;
+        }
+    } */
+
+.other_cars {
+    background: url(mycar2red.png) no-repeat center;
+    background-size: 100% 100%;
+    width: 70px;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: moveOtherCar 1.5s linear infinite;
+}
+
+
+@keyframes moveOtherCar {
+    0% {
+        top: 0;
+    }
+
+    100% {
+        top: 600px;
+    }
+}
+
+.my_car {
+    background: url(mycar1png.png) no-repeat center;
+    background-size: 100% 100%;
+    width: 70px;
+    height: 100px;
+    position: absolute;
+    /* bottom: 70px; */
+    top: 460px;
+    /* left: 10px; */
+    left: 0px;
+    /* transition: 0.3s linear; */
+}
+
+/* --box-arrows */
+.box-parent {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+
+.box-arrow {
+    width: 100px;
+    height: 100px;
+    /* background-color: lightseagreen; */
+    position: relative;
+}
+
+.left {
+    width: 27px;
+    height: 27px;
+    border-top: 10px solid rgb(200 200 255);
+    border-left: 10px solid rgb(52, 52, 133);
+    transform: rotate(-48deg);
+    position: absolute;
+    top: 30%;
+    left: 0;
+}
+
+.right {
+    width: 27px;
+    height: 27px;
+    border-top: 10px solid rgb(200 200 255);
+    border-right: 10px solid rgb(52, 52, 133);
+    transform: rotate(48deg);
+    position: absolute;
+    top: 30%;
+    right: 0;
+}
+
+.top {
+    width: 27px;
+    height: 27px;
+    border-top: 10px solid rgb(200 200 255);
+    border-right: 10px solid rgb(52, 52, 133);
+    transform: rotate(-45deg);
+    position: absolute;
+    top: -2px;
+    right: 34.7%;
+}
+
+.bottom {
+    width: 27px;
+    height: 27px;
+    border-top: 10px solid rgb(200 200 255);
+    border-right: 10px solid rgb(52, 52, 133);
+    transform: rotate(133deg);
+    position: absolute;
+    right: 34.7%;
+    bottom: 8%;
+}
+
+/* --popup game over  */
+
+#result {
+    position: absolute;
+    background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-weight: bold;
+    z-index: 1;
+    text-align: center;
+    border: 1px solid #ff6b6b;
+    padding: 15px;
+    width: 80%;
+    cursor: pointer;
+    letter-spacing: 5;
+    word-spacing: 3;
+    line-height: 30px;
+    text-transform: uppercase;
+    box-shadow: 0 5px 5px #777;
+    border-radius: 5px;
+    display: none;
+}
+
+#result h1 {
+    color: red;
+}
+
+#result #btn {
+    padding: 5px 10px;
+    color: green;
+    font-weight: bold;
+    font-size: 17px;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+/* @media screen and (max-width : 500px){
+    .my_car{
+        left: 2%;
+        transition: 0.6s linear;
+    }
+} */
