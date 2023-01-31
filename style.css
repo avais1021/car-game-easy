@@ -101,8 +101,8 @@
 .left {
     width: 27px;
     height: 27px;
-    border-top: 10px solid rgb(200 200 255);
-    border-left: 10px solid rgb(52, 52, 133);
+    border-top: 10px solid greenyellow;
+    border-left: 10px solid greenyellow;
     transform: rotate(-48deg);
     position: absolute;
     top: 30%;
@@ -112,8 +112,8 @@
 .right {
     width: 27px;
     height: 27px;
-    border-top: 10px solid rgb(200 200 255);
-    border-right: 10px solid rgb(52, 52, 133);
+    border-top: 10px solid greenyellow;
+    border-right: 10px solid greenyellow;
     transform: rotate(48deg);
     position: absolute;
     top: 30%;
@@ -123,8 +123,8 @@
 .top {
     width: 27px;
     height: 27px;
-    border-top: 10px solid rgb(200 200 255);
-    border-right: 10px solid rgb(52, 52, 133);
+    border-top: 10px solid greenyellow;
+    border-right: 10px solid greenyellow;
     transform: rotate(-45deg);
     position: absolute;
     top: -2px;
@@ -134,8 +134,8 @@
 .bottom {
     width: 27px;
     height: 27px;
-    border-top: 10px solid rgb(200 200 255);
-    border-right: 10px solid rgb(52, 52, 133);
+    border-top: 10px solid greenyellow;
+    border-right: 10px solid greenyellow;
     transform: rotate(133deg);
     position: absolute;
     right: 34.7%;
