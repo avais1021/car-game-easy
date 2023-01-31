@@ -57,7 +57,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    animation: moveOtherCar 1.5s linear infinite;
+    animation: moveOtherCar 1s linear infinite;
 }
 
 
