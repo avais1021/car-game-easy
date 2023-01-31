@@ -87,13 +87,17 @@
 /* --box-arrows */
 .box-parent {
     position: absolute;
-    bottom: 10px;
-    left: 10px;
+    width: 100%;
+    top: 50%;
+    /* bottom: 10px; */
+    /* left: 10px; */
 }
 
 .box-arrow {
-    width: 100px;
+    /* width: 100px; */
+    width: 90%;
     height: 100px;
+    margin: 0 auto;
     /* background-color: lightseagreen; */
     position: relative;
 }
@@ -127,8 +131,10 @@
     border-right: 10px solid greenyellow;
     transform: rotate(-45deg);
     position: absolute;
-    top: -2px;
-    right: 34.7%;
+    /* top: -2px; */
+    top: -30px;
+    /* right: 34.7%; */
+    right: 0;
 }
 
 .bottom {
@@ -138,8 +144,10 @@
     border-right: 10px solid greenyellow;
     transform: rotate(133deg);
     position: absolute;
-    right: 34.7%;
-    bottom: 8%;
+    /* right: 34.7%; */
+    /* bottom: 8%; */
+    left: 0;
+    bottom: -11px;
 }
 
 /* --popup game over  */

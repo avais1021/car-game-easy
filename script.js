@@ -121,7 +121,7 @@ setInterval(
         console.log(myCarTop);
         // if((otherCarLeft===myCarLeft) && (otherCarTop > 250) && (otherCarTop < 450 )){
         if ((otherCarTop > myCarTop) && (otherCarLeft === myCarLeft) ) {
-            result.style.display = "block";
+            // result.style.display = "block";
             // game_area.style.display = "none";
             score.innerHTML = `score: ${counter} `
 
