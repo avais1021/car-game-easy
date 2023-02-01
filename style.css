@@ -6,7 +6,8 @@
 
 .car_game {
     background: greenyellow;
-    height: 100vh;
+    /* height: 100vh; */
+    height: 90vh;
     /* height:580px; */
     width: 100%;
     /* margin-top: 50px; */
