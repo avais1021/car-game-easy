@@ -3,10 +3,10 @@
 const other_cars = document.querySelector(".other_cars");
 const my_car = document.querySelector(".my_car");
 const game_area = document.querySelector(".game_area");
-const parent_lines = document.querySelector(".parent_lines");
+// const parent_lines = document.querySelector(".parent_lines");
 const result = document.getElementById("result");
 const score = document.getElementById("score");
-const lines = document.querySelectorAll(".lines");
+// const lines = document.querySelectorAll(".lines");
 const carMoveSound = document.querySelector("#carMoveSound");
 const crash = document.querySelector("#crash");
 var counter = 0;
@@ -54,7 +54,6 @@ window.addEventListener("keydown", function (e) {
 
     if (e.keyCode == 37) {
         const myCarInfoLeft = parseInt(window.getComputedStyle(my_car).getPropertyValue("left"));
-        // if(myCarInfoLeft )
         if (myCarInfoLeft > 40) {
             my_car.style.left = (myCarInfoLeft - 68) + "px";
         }
@@ -129,7 +128,6 @@ setInterval(
         const myCarLeft = parseInt(window.getComputedStyle(my_car).getPropertyValue("left"));
         console.log(otherCarTop);
         console.log(myCarTop);
-        // if((otherCarLeft===myCarLeft) && (otherCarTop > 250) && (otherCarTop < 450 )){
         if ((otherCarTop > myCarTop) && (otherCarLeft === myCarLeft) ) {
             result.style.display = "block";
             game_area.style.display = "none";
@@ -140,8 +138,6 @@ setInterval(
         }
 
     }
-
-
     , 10)
 
 
