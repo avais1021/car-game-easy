@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body{
+    background: #1c1c72;
+}
+
 .car_game {
     background: greenyellow;
     /* height: 100vh; */
