@@ -63,7 +63,7 @@ body{
     position: absolute;
     top: 0;
     left: 68px;
-    animation: moveOtherCar 1s linear infinite;
+    animation: moveOtherCar 1.2s linear infinite;
 }
 
 
