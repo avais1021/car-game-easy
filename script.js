@@ -7,6 +7,8 @@ const parent_lines = document.querySelector(".parent_lines");
 const result = document.getElementById("result");
 const score = document.getElementById("score");
 const lines = document.querySelectorAll(".lines");
+const carMoveSound = document.querySelector("#carMoveSound");
+const crash = document.querySelector("#crash");
 var counter = 0;
 
 // --arrows 
@@ -47,6 +49,7 @@ window.addEventListener("keydown", function (e) {
         if (myCarInfoLeft < road.width - 150) {
             my_car.style.left = (myCarInfoLeft + 68) + "px";
         }
+        carMoveSound.play();
     }
 
     if (e.keyCode == 37) {
@@ -55,6 +58,7 @@ window.addEventListener("keydown", function (e) {
         if (myCarInfoLeft > 40) {
             my_car.style.left = (myCarInfoLeft - 68) + "px";
         }
+        carMoveSound.play();
     }
 
     if (e.keyCode == 40) {
@@ -62,6 +66,7 @@ window.addEventListener("keydown", function (e) {
         if (myCarTop < 465) {
             my_car.style.top = (myCarTop + 68) + "px";
         }
+        carMoveSound.play();
     } 
   
     if (e.keyCode == 38) {
@@ -69,6 +74,7 @@ window.addEventListener("keydown", function (e) {
         if (myCarTop > 280) {
             my_car.style.top = (myCarTop - 68) + "px";
         }
+        carMoveSound.play();
     }
     
 });
@@ -84,6 +90,7 @@ rightArrow.addEventListener("click", function () {
     if (myCarInfoLeft < road.width - 150) {
         my_car.style.left = `${leftvalue += 68}px`;
     }
+            carMoveSound.play();
 })
 
 leftArrow.addEventListener("click", function () {
@@ -92,6 +99,7 @@ leftArrow.addEventListener("click", function () {
     if (myCarInfoLeft > 0) {
         my_car.style.left = `${leftvalue -= 68}px`;
     }
+            carMoveSound.play();
 })
 
 upArrow.addEventListener("click", function () {
@@ -99,6 +107,7 @@ upArrow.addEventListener("click", function () {
     if (myCarTop > 260) {
         my_car.style.top = `${TopValue -= 68}px`;
     }
+            carMoveSound.play();
 })
 
 downArrow.addEventListener("click", function () {
@@ -106,6 +115,7 @@ downArrow.addEventListener("click", function () {
     if (myCarTop < 465) {
         my_car.style.top = `${TopValue += 68}px`;
     }
+            carMoveSound.play();
 })
 
 // --game Over  
@@ -121,11 +131,12 @@ setInterval(
         console.log(myCarTop);
         // if((otherCarLeft===myCarLeft) && (otherCarTop > 250) && (otherCarTop < 450 )){
         if ((otherCarTop > myCarTop) && (otherCarLeft === myCarLeft) ) {
-            // result.style.display = "block";
-            // game_area.style.display = "none";
+            result.style.display = "block";
+            game_area.style.display = "none";
             score.innerHTML = `score: ${counter} `
 
             counter = 0;
+            crash.play();
         }
 
     }
