@@ -6,13 +6,16 @@
 
 .car_game {
     background: greenyellow;
-    height: 100vh;
+    /* height: 100vh; */
+    height:580px;
     width: 100%;
+    margin-top: 50px;
 }
 
 .game_area {
     max-width: 355px;
-    height: 100vh;
+    /* height: 100vh; */
+    height: 100%;
     margin: 0 auto;
     background-color: black;
     border-left: 7px dashed white;
@@ -75,7 +78,7 @@
     width: 70px;
     height: 100px;
     position: absolute;
-    top: 500px;
+    top: 460px;
     left: 0px;
 }
 
